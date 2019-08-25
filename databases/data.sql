@@ -1,0 +1,9 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "data" (
+	"time"	INTEGER NOT NULL,
+	"userCount"	INTEGER NOT NULL,
+	"viewCount"	INTEGER NOT NULL,
+	"totalSubmissions"	INTEGER NOT NULL,
+	"minutesSaved"	REAL NOT NULL
+);
+COMMIT;

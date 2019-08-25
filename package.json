@@ -1,0 +1,16 @@
+{
+  "name": "sponsor_block_stat_tracker",
+  "version": "1.0.0",
+  "description": "Pulls data from sponsorblock to track a history of the stats.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Ajay Ramachandran",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "sqlite3": "^4.1.0"
+  }
+}
