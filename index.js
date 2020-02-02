@@ -6,13 +6,13 @@ const fetch = require("node-fetch");
 
 async function getStats() {
     //fetch the stats
-    let result = await fetch("http://localhost:4442/api/getTotalStats")
+    let result = await fetch("https://sponsor.ajay.app/api/getTotalStats")
     
     let json = await result.json();
 
     let currentTime = Date.now();
 
-    db.prepare("INSERT INTO data VALUES(?, ?, ?, ?, ?)").run(currentTime, json.userCount, json.viewCount, json.totalSubmissions, json.minutesSaved);
+    db.prepare("INSERT INTO data VALUES(?, ?, ?, ?, ?)").run(currentTime, json.activeUsers, json.viewCount, json.totalSubmissions, json.minutesSaved);
 }
 
 //get stats every 20 seconds
