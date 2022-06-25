@@ -10,7 +10,7 @@
   "author": "Ajay Ramachandran",
   "license": "MIT",
   "dependencies": {
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.6.7",
     "sqlite3": "^4.1.0"
   }
 }
